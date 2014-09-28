@@ -1,75 +1,99 @@
 /* Stylesheet for Annie's About Me page*/
 
-
-article {
-       background-color: rgba(255, 255, 255, 0.65);
-}
-
-p {       
-   text-align: justify;
-   font-weight: bold;
-   color: red;
-}
-
-    header {
+header {
       text-align: center;
-      /*background: url('http://www.galleryintell.com/wp-content/uploads/2013/03/autumn_rhythm-pollock1.jpg');*/
       background-size: cover;
       color: black;
       font-family: 'Aclonica', sans-serif;
     }
 
-    a {
-      color: black;
+article {
+       background-color: rgba(255, 255, 255, 0.25);
+}
+
+p {       
+   text-align: justify;
+   font-weight: bold;
+   color: white;
+}
+
+a {
+      color: white;
     }
     
-    li {
+li {
       display: inline;
       padding: 0px 10px 0px 10px;
     }
-   img.bottom_left {
-       position: absolute;
-       bottom: 5px; 
-       left: 5px;
-   }
 
-    img.top_right {
-       position: absolute;
-       top: 0px;
-       right: 0px;
-   }    
-    img {
-       border: 2px solid white;
-       border-radius: 5px;
-       margin: 40px 0px 0px 0px;
 
-    }
-    
-    body {
-       background-color: rgba(50, 50, 50, 0.9);
-    }
-    
-    
-    
-    h1 {
+body {
+       background: url('retro.gif') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+   
+
+h1 {
       font-size: 60px;
       text-align: center;
-    }
-/*    img {
-      margin: 40px 0px 0px 0px;
-      border: 7px solid white;
-      border-radius: 20px;
-    }
-    ul {
+}
+
+ul {
       padding: 10px;
       background: rgba(255, 255,255, .5);
-    }
+}
 
-    article {
+article {
       max-width: 500px;
       padding: 20px;
       margin: 0 auto;
+}
+    
+#wrapper {
+     height: 500px; 
+     position:relative;
+}
+
+#bottomDweller {
+     position: absolute; 
+     bottom: 0px;
+     left: 0px;
+}
+
+
+#topDweller {
+     position: absolute; 
+     top: 0px;
+     right: 0px;
+     margin: 0 auto;
+}
+
+#centerDweller {
+     position: absolute; 
+     top: 50%;
+     right: 50%;
+     margin: 0 auto;
+}
+
+img {
+       border: 1px solid white;
+       border-radius: 20px;
+       margin: 40px 0px 0px 0px;
     }
+    
+
+img#top_right {
+       position: absolute;
+       top: 0px;
+       right: 0px;
+       margin: 0 auto;
+}    
+        
+    
+    
     @media (max-width: 500px) {
       body {
         background: red; 
@@ -82,18 +106,19 @@ p {
         padding: 5px;
       }
     }
-*/
+
 
 #slider {
-	height:300px;
-	width:300px;
+	height:400px;
+	width:650px;
 	margin: 50px auto;
 	position:relative;
-	border-radius:4px;
+	/*border-radius:4px;*/
 	overflow:hidden;
 	}
 #image {
-	height:300px;
+	height:400px;
+	width:650px;
 	position:absolute;
 	}
 .left_hold {
@@ -117,7 +142,7 @@ p {
 	top:40%;
 	left:20px;
 	opacity:0;
-	transition: all .2s ease-in-out 0s;
+	transition: all .1s ease-in-out 0s;
 	}
 .right {
 	height:25px;
@@ -126,12 +151,12 @@ p {
 	top:40%;
 	right:20px;
 	opacity:0;
-	transition: all .5s ease-in-out 0s;
+	transition: all .1s ease-in-out 0s;
 	}
 .left_hold:hover .left {
-	opacity:0.6;
+	opacity:1;
 	}
 .right_hold:hover .right {
-	opacity:0.6;
+	opacity:1;
 }
 .left:hover .left1
