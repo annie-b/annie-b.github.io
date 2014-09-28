@@ -1,137 +1,66 @@
-/* Stylesheet for Annie's About Me page*/
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link href='http://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+var imageCount = 1;
+var total = 3;
 
-
-article {
-       background-color: rgba(255, 255, 255, 0.65);
-}
-
-p {       
-   text-align: justify;
-   font-weight: bold;
-   color: red;
-}
-
-    header {
-      text-align: center;
-      /*background: url('http://www.galleryintell.com/wp-content/uploads/2013/03/autumn_rhythm-pollock1.jpg');*/
-      background-size: cover;
-      color: black;
-      font-family: 'Aclonica', sans-serif;
-    }
-
-    a {
-      color: black;
-    }
-    
-    li {
-      display: inline;
-      padding: 0px 10px 0px 10px;
-    }
-   img.bottom_left {
-       position: absolute;
-       bottom: 5px; 
-       left: 5px;
-   }
-
-    img.top_right {
-       position: absolute;
-       top: 0px;
-       right: 0px;
-   }    
-    img {
-       border: 2px solid white;
-       border-radius: 5px;
-       margin: 40px 0px 0px 0px;
-
-    }
-    
-    body {
-       background-color: rgba(50, 50, 50, 0.9);
-    }
-    
-    
-    
-    h1 {
-      font-size: 60px;
-      text-align: center;
-    }
-/*    img {
-      margin: 40px 0px 0px 0px;
-      border: 7px solid white;
-      border-radius: 20px;
-    }
-    ul {
-      padding: 10px;
-      background: rgba(255, 255,255, .5);
-    }
-
-    article {
-      max-width: 500px;
-      padding: 20px;
-      margin: 0 auto;
-    }
-    @media (max-width: 500px) {
-      body {
-        background: red; 
-      }
-      h1 {
-       font-size: 36px;
-      }
-      li {
-        display: block;
-        padding: 5px;
-      }
-    }
-*/
-
-#slider {
-	height:300px;
-	width:300px;
-	margin: 50px auto;
-	position:relative;
-	border-radius:4px;
-	overflow:hidden;
+function photo(x) {
+	var image = document.getElementById('image');
+	imageCount = imageCount + x;
+	if(imageCount > total){imageCount = 1;}
+	if(imageCount < 1){imageCount = total;}	
+	image.src = "images/img"+ imageCount +".jpg";
 	}
-#image {
-	height:300px;
-	position:absolute;
-	}
-.left_hold {
-	height: 400px;
-	width: 100px;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-}
-.right_hold {
-	height: 400px;
-	width: 100px;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-}
-.left {
-	height:25px;
-	width:25px;
-	position:absolute;
-	top:40%;
-	left:20px;
-	opacity:0;
-	transition: all .2s ease-in-out 0s;
-	}
-.right {
-	height:25px;
-	width:25px;
-	position:absolute;
-	top:40%;
-	right:20px;
-	opacity:0;
-	transition: all .5s ease-in-out 0s;
-	}
-.left_hold:hover .left {
-	opacity:0.6;
-	}
-.right_hold:hover .right {
-	opacity:0.6;
-}
-.left:hover .left1
+	
+
+</script>
+
+</head>
+<body onLoad="photoA()">
+<a id="top">
+<div id="slider">
+<img src="images/img1.jpg" id="image" >
+<div class="left_hold"><img onClick="photo(-1)" class="left" src="images/left_arrow.gif"></div>
+<div class="right_hold"><img onClick="photo(1)" class="right" src="images/right_arrow.gif"></div>
+</div>
+
+  <header>
+    <h1><align="center">Hi. I'm Annie.</h1>    
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#contact">Contact Info</a></li>
+      <li><a href="#skills">Technical Skills</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+    </ul>
+  </header>
+
+  <article>
+  <a id="about"><h2>About Me</h2></a>
+  <p>My name is Annie Bourgeois. I live in North Carolina with my husband, 2 dogs, and 2 cats.</p>
+  </article>
+  
+  <article>
+  <a id="contact"><h2>Contact Info</h2></a>
+  <p>I can be reached via email at: anne.bourgeois1@gmail.com or by phone at (603)321-8589.</p>
+  </article>
+  
+  <article>
+  <a id="skills"><h2>Technical Skills</h2></a>
+  <p>Web Developer/Senior Systems Administrator with Extensive Background in Linux Environments. Red Hat Certified Engineer (Enterprise 4.0)
+
+Operating Systems: Linux RHEL6, RHEL5, RHEL4; Solaris 8
+
+Programming languages: Perl, CGI, MySQL, PHP, Awk, HTML, JavaScript, Bash
+
+Services: Apache, DNS, NFS, NIS, LDAP, DHCP, Samba, Kickstart, Sendmail, Nagios, TWiki, Drupal, Puppet, SCCS, RCS, Verdasys, VMware</p>
+  </article>
+  
+  <article>
+  <a id="hobbies"><h2>Hobbies</h2></a>
+  <p>I enjoy long-distance running and have completed several half-marathons. I also like to read, knit, and spend time with friends.</p>
+  </article>
+<a href="#top">Go to top</a>
+</body>
+

@@ -1,6 +1,137 @@
 /* Stylesheet for Annie's About Me page*/
 
-p {
-    text-align: center;
-    font-weight: bold;
+
+article {
+       background-color: rgba(255, 255, 255, 0.65);
 }
+
+p {       
+   text-align: justify;
+   font-weight: bold;
+   color: red;
+}
+
+    header {
+      text-align: center;
+      /*background: url('http://www.galleryintell.com/wp-content/uploads/2013/03/autumn_rhythm-pollock1.jpg');*/
+      background-size: cover;
+      color: black;
+      font-family: 'Aclonica', sans-serif;
+    }
+
+    a {
+      color: black;
+    }
+    
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+   img.bottom_left {
+       position: absolute;
+       bottom: 5px; 
+       left: 5px;
+   }
+
+    img.top_right {
+       position: absolute;
+       top: 0px;
+       right: 0px;
+   }    
+    img {
+       border: 2px solid white;
+       border-radius: 5px;
+       margin: 40px 0px 0px 0px;
+
+    }
+    
+    body {
+       background-color: rgba(50, 50, 50, 0.9);
+    }
+    
+    
+    
+    h1 {
+      font-size: 60px;
+      text-align: center;
+    }
+/*    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(255, 255,255, .5);
+    }
+
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      body {
+        background: red; 
+      }
+      h1 {
+       font-size: 36px;
+      }
+      li {
+        display: block;
+        padding: 5px;
+      }
+    }
+*/
+
+#slider {
+	height:300px;
+	width:300px;
+	margin: 50px auto;
+	position:relative;
+	border-radius:4px;
+	overflow:hidden;
+	}
+#image {
+	height:300px;
+	position:absolute;
+	}
+.left_hold {
+	height: 400px;
+	width: 100px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.right_hold {
+	height: 400px;
+	width: 100px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+.left {
+	height:25px;
+	width:25px;
+	position:absolute;
+	top:40%;
+	left:20px;
+	opacity:0;
+	transition: all .2s ease-in-out 0s;
+	}
+.right {
+	height:25px;
+	width:25px;
+	position:absolute;
+	top:40%;
+	right:20px;
+	opacity:0;
+	transition: all .5s ease-in-out 0s;
+	}
+.left_hold:hover .left {
+	opacity:0.6;
+	}
+.right_hold:hover .right {
+	opacity:0.6;
+}
+.left:hover .left1
