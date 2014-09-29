@@ -1,5 +1,14 @@
 /* Stylesheet for Annie's About Me page*/
 
+#centerDweller {
+  	width: 100px;
+	height: 100px;	
+	float: positioned;
+	position: absolute;
+	bottom: 50px;
+	left: 40%;
+}
+
 header {
       text-align: center;
       background-size: cover;
@@ -7,8 +16,17 @@ header {
       font-family: 'Aclonica', sans-serif;
     }
 
-article {
-       background-color: rgba(255, 255, 255, 0.25);
+body {
+       background: url('retro.gif') no-repeat center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+h1 {
+      font-size: 60px;
+      text-align: center;
 }
 
 p {       
@@ -26,28 +44,14 @@ li {
       padding: 0px 10px 0px 10px;
     }
 
-
-body {
-       background: url('retro.gif') no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-}
-   
-
-h1 {
-      font-size: 60px;
-      text-align: center;
-}
-
 ul {
       padding: 10px;
       background: rgba(255, 255,255, .5);
 }
 
 article {
-      max-width: 500px;
+      background-color: rgba(255, 255, 255, 0.25);
+      max-width: 600px;
       padding: 20px;
       margin: 0 auto;
 }
@@ -63,20 +67,6 @@ article {
      left: 0px;
 }
 
-
-#topDweller {
-     position: absolute; 
-     top: 0px;
-     right: 0px;
-     margin: 0 auto;
-}
-
-#centerDweller {
-     position: absolute; 
-     top: 50%;
-     right: 50%;
-     margin: 0 auto;
-}
 
 img {
        border: 1px solid white;
@@ -94,7 +84,7 @@ img#top_right {
         
     
     
-    @media (max-width: 500px) {
+@media (max-width: 500px) {
       body {
         background: red; 
       }
@@ -116,6 +106,7 @@ img#top_right {
 	/*border-radius:4px;*/
 	overflow:hidden;
 	}
+	
 #image {
 	height:400px;
 	width:650px;
@@ -159,4 +150,9 @@ img#top_right {
 .right_hold:hover .right {
 	opacity:1;
 }
-.left:hover .left1
+/*
+.left:hover .left1{
+	opacity:1;
+
+}
+*/
