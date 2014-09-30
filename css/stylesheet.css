@@ -10,7 +10,7 @@
 }
 
 header {
-      background: url('purple-squares.gif') no-repeat center fixed;
+      background: url('../images/purple-squares.gif') no-repeat center fixed;
       text-align: center;
       background-size: cover;
       color: white;
@@ -20,7 +20,7 @@ header {
     }
 
 body {
-       background: url('retro.gif') no-repeat center fixed;
+       background: url('../images/retro.gif') no-repeat center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
