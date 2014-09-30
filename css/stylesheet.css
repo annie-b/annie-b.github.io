@@ -6,8 +6,7 @@ header {
       background-size: cover;
       color: white;
       font-family: 'Aclonica', sans-serif;
-      height: 220px;
-      
+      height: 218px;
     }
 
 body {
@@ -66,47 +65,45 @@ article {
 }
 
 .medals {
-     height: 100px; 
+     height: 175px; 
      position:relative;
      display: inline;
      padding: 0;
 }
-    
-#wrapper {
-     height: 500px; 
-     position:relative;
-}
 
-#bottomDweller {
-     height: 250px;
-     position: absolute; 
-     bottom: 0px;
-     left: 0px;
-     border: 1px solid white;
-     border-radius: 5px;
-     margin: 0 auto;
-
+.caption_center {
+     font-size: 75%;
+     color: white;
+     text-align: center;
 }
 
 figcaption {
      font-size: 75%;
      color: white;
+     text-align: left;
 }
 
-
-img {
-       margin: 0px 0px 0px 0px;
-    }
-    
-
-img#top_right {
+#top_right {
        position: absolute;
        top: 0px;
        right: 0px;
        margin: 0 auto;
+}
+
+#bottom_left {
+     position: absolute; 
+     bottom: 0px;
+     left: 0px;
+
+     margin: 0 auto;
+}
+
+img {
+       margin: 0px 0px 0px 0px;
        border-radius: 20px;
        border: 1px solid white;
-}    
+    }
+
         
 img#center {
        position: relative;
@@ -114,13 +111,22 @@ img#center {
        margin: 0 auto;
        border-radius: 20px;
        border: 1px solid white;
-}    
-   
+} 
+
+/*.caption {
+       width:50px; 
+       font-size:80%; 
+       text-align:center;
+       padding-bottom:0.5em;
+} */  
 
 *{
 	margin:0px;
 	}
+
 	
+/* CSS for slider */	
+
 #slider {
 	height:300px;
 	width:280px;
@@ -129,11 +135,13 @@ img#center {
 	border-radius:4px;
 	overflow:hidden;
 	}
+	
 #image {
 	height:300px;
 	width:260px;
 	position:absolute;
 	}
+	
 .left_hold {
 	height: 300px;
 	width: 100px;
@@ -141,6 +149,7 @@ img#center {
 	top: 0px;
 	left: 0px;
 }
+
 .right_hold {
 	height: 300px;
 	width: 100px;
@@ -172,19 +181,34 @@ img#center {
 .right_hold:hover .right {
 	opacity:0.6;
 }
-.left:hover .left1    
+/*.left:hover .left1    */
     
 @media (max-width: 500px) {
-      body {
+
+   header {
+      background: url('../images/purple-squares.gif') no-repeat center fixed;
+      text-align: center;
+      background-size: cover;
+      color: white;
+      font-family: 'Aclonica', sans-serif;
+      height: 310px;
+    }
+    
+   body {
         background: red; 
+        position: relative;
       }
-      h1 {
-       font-size: 36px;
+   h1 {
+       font-size: 30px;
+      position: relative;
+       
       }
-      li {
+   li {
         display: block;
         padding: 5px;
+	font-size: 10px;
+
       }
     }
-
+}
 
