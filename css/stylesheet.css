@@ -1,14 +1,5 @@
 /* Stylesheet for Annie's About Me page*/
 
-#centerDweller {
-  	width: 100px;
-	height: 100px;	
-	float: positioned;
-	position: absolute;
-	bottom: 50px;
-	left: 40%;
-}
-
 header {
       background: url('../images/purple-squares.gif') no-repeat center fixed;
       text-align: center;
@@ -87,9 +78,14 @@ article {
 }
 
 #bottomDweller {
+     height: 250px;
      position: absolute; 
      bottom: 0px;
      left: 0px;
+     border: 1px solid white;
+     border-radius: 5px;
+     margin: 0 auto;
+
 }
 
 figcaption {
@@ -112,11 +108,19 @@ img#top_right {
        border: 1px solid white;
 }    
         
-
+img#center {
+       position: relative;
+       left: 20px;
+       margin: 0 auto;
+       border-radius: 20px;
+       border: 1px solid white;
+}    
+   
 
 *{
 	margin:0px;
 	}
+	
 #slider {
 	height:300px;
 	width:280px;
