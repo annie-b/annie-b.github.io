@@ -10,10 +10,13 @@
 }
 
 header {
+      background: url('purple-squares.gif') no-repeat center fixed;
       text-align: center;
       background-size: cover;
-      color: black;
+      color: white;
       font-family: 'Aclonica', sans-serif;
+      height: 220px;
+      
     }
 
 body {
@@ -27,6 +30,12 @@ body {
 h1 {
       font-size: 60px;
       text-align: center;
+      color: white;
+      height: 180px;
+/*      margin: 20px 0px 20px 0px;*/
+      position: relative;
+      top: 15px;
+      
 }
 
 p {       
@@ -41,12 +50,16 @@ a {
     
 li {
       display: inline;
-      padding: 0px 10px 0px 10px;
+      padding: 0px 20px 0px 20px;
+      
     }
 
 ul {
       padding: 10px;
       background: rgba(255, 255,255, .5);
+      bottom: 0px;
+      z-index: 1;
+
 }
 
 #hobbies {
@@ -86,8 +99,6 @@ figcaption {
 
 
 img {
-/*       border: 1px solid white;
-       border-radius: 20px;*/
        margin: 0px 0px 0px 0px;
     }
     
@@ -101,7 +112,63 @@ img#top_right {
        border: 1px solid white;
 }    
         
-    
+
+
+*{
+	margin:0px;
+	}
+#slider {
+	height:300px;
+	width:280px;
+	margin: 50px auto;
+	position:relative;
+	border-radius:4px;
+	overflow:hidden;
+	}
+#image {
+	height:300px;
+	width:260px;
+	position:absolute;
+	}
+.left_hold {
+	height: 300px;
+	width: 100px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.right_hold {
+	height: 300px;
+	width: 100px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+.left {
+	height:50px;
+	width:50px;
+	position:absolute;
+	top:40%;
+	left:0px;
+	opacity:0;
+	transition: all .2s ease-in-out 0s;
+	}
+.right {
+	height:50px;
+	width:50px;
+	position:absolute;
+	top:40%;
+	right:20px;
+	opacity:0;
+	transition: all .5s ease-in-out 0s;
+	}
+.left_hold:hover .left {
+	opacity:0.6;
+	}
+.right_hold:hover .right {
+	opacity:0.6;
+}
+.left:hover .left1    
     
 @media (max-width: 500px) {
       body {
@@ -117,61 +184,3 @@ img#top_right {
     }
 
 
-#slider {
-	height:400px;
-	width:650px;
-	margin: 50px auto;
-	position:relative;
-	/*border-radius:4px;*/
-	overflow:hidden;
-	}
-	
-#image {
-	height:400px;
-	width:650px;
-	position:absolute;
-	}
-.left_hold {
-	height: 400px;
-	width: 100px;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-}
-.right_hold {
-	height: 400px;
-	width: 100px;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-}
-.left {
-	height:25px;
-	width:25px;
-	position:absolute;
-	top:40%;
-	left:20px;
-	opacity:0;
-	transition: all .1s ease-in-out 0s;
-	}
-.right {
-	height:25px;
-	width:25px;
-	position:absolute;
-	top:40%;
-	right:20px;
-	opacity:0;
-	transition: all .1s ease-in-out 0s;
-	}
-.left_hold:hover .left {
-	opacity:1;
-	}
-.right_hold:hover .right {
-	opacity:1;
-}
-/*
-.left:hover .left1{
-	opacity:1;
-
-}
-*/
