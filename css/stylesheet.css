@@ -1,31 +1,29 @@
 /* Stylesheet for Annie's About Me page*/
 
 header {
-      background: url('../images/purple-squares.gif') no-repeat center fixed;
-      text-align: center;
-      background-size: cover;
-      color: white;
-      font-family: 'Aclonica', sans-serif;
-      height: 218px;
-    }
+   background: url('../images/purple-squares.gif') no-repeat center fixed;
+   text-align: center;
+   background-size: cover;
+   color: white;
+   font-family: 'Aclonica', sans-serif;
+   height: 220px;   
+}
 
 body {
-       background: url('../images/retro.gif') no-repeat center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+   background: url('../images/retro.gif') no-repeat center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
 }
 
 h1 {
-      font-size: 60px;
-      text-align: center;
-      color: white;
-      height: 180px;
-/*      margin: 20px 0px 20px 0px;*/
-      position: relative;
-      top: 15px;
-      
+   font-size: 60px;
+   text-align: center;
+   color: white;
+   height: 180px;
+   position: relative;
+   top: 15px;  
 }
 
 p {       
@@ -35,153 +33,155 @@ p {
 }
 
 a {
-      color: white;
-    }
+   color: white;
+}
     
 li {
-      display: inline;
-      padding: 0px 20px 0px 20px;
-      
-    }
+   display: inline;
+   padding: 0px 20px 0px 20px;
+}
 
 ul {
-      padding: 10px;
-      background: rgba(255, 255,255, .5);
-      bottom: 0px;
-      z-index: 1;
-
+   padding: 10px;
+   background: rgba(255, 255,255, .5);
+   bottom: 0px;
+   z-index: 1;
 }
 
 #hobbies {
      display: block;
-     
 }
 
 article {
-      background-color: rgba(255, 255, 255, 0.25);
-      max-width: 600px;
-      padding: 20px;
-      margin: 0 auto;
+   background-color: rgba(255, 255, 255, 0.25);
+   max-width: 600px;
+   padding: 20px;
+   margin: 0 auto;
 }
 
+*{
+   margin:0px;
+}
+
+/* CSS for images */
+
 .medals {
-     height: 175px; 
-     position:relative;
-     display: inline;
-     padding: 0;
+   height: 175px; 
+   position:relative;
+   display: inline;
+   padding: 0;
 }
 
 .caption_center {
-     font-size: 75%;
-     color: white;
-     text-align: center;
+   font-size: 75%;
+   color: white;
+   text-align: center;
 }
 
 figcaption {
-     font-size: 75%;
-     color: white;
-     text-align: left;
+   font-size: 75%;
+   color: white;
+   text-align: left;
 }
 
 #top_right {
-       position: absolute;
-       top: 0px;
-       right: 0px;
-       margin: 0 auto;
+   position: absolute;
+   top: 0px;
+   right: 0px;
+   margin: 0 auto;
 }
 
 #bottom_left {
-     position: absolute; 
-     bottom: 0px;
-     left: 0px;
-
-     margin: 0 auto;
+   position: absolute; 
+   bottom: 0px;
+   left: 0px;
+   margin: 0 auto;
 }
 
 img {
-       margin: 0px 0px 0px 0px;
-       border-radius: 20px;
-       border: 1px solid white;
-    }
+   margin: 0px 0px 0px 0px;
+   border-radius: 20px;
+   border: 1px solid white;
+}
 
-        
 img#center {
-       position: relative;
-       left: 20px;
-       margin: 0 auto;
-       border-radius: 20px;
-       border: 1px solid white;
+   position: relative;
+   left: 20px;
+   margin: 0 auto;
+   border-radius: 20px;
+   border: 1px solid white;
 } 
 
-/*.caption {
-       width:50px; 
-       font-size:80%; 
-       text-align:center;
-       padding-bottom:0.5em;
-} */  
-
-*{
-	margin:0px;
-	}
+/* End of CSS for images */
 
 	
-/* CSS for slider */	
+/* CSS for slideshow */	
 
 #slider {
-	height:300px;
-	width:280px;
-	margin: 50px auto;
-	position:relative;
-	border-radius:4px;
-	overflow:hidden;
-	}
+   height:300px;
+   width:280px;
+   margin: 50px auto;
+   position:relative;
+   border-radius:4px;
+   overflow:hidden;
+}
 	
 #image {
-	height:300px;
-	width:260px;
-	position:absolute;
-	}
+   height:300px;
+   width:260px;
+   position:absolute;
+}
 	
 .left_hold {
-	height: 300px;
-	width: 100px;
-	position: absolute;
-	top: 0px;
-	left: 0px;
+   height: 300px;
+   width: 100px;
+   position: absolute;
+   top: 0px;
+   left: 0px;
 }
 
 .right_hold {
-	height: 300px;
-	width: 100px;
-	position: absolute;
-	top: 0px;
-	right: 0px;
+   height: 300px;
+   width: 100px;
+   position: absolute;
+   top: 0px;
+   right: 0px;
 }
+
 .left {
-	height:50px;
-	width:50px;
-	position:absolute;
-	top:40%;
-	left:0px;
-	opacity:0;
-	transition: all .2s ease-in-out 0s;
-	}
-.right {
-	height:50px;
-	width:50px;
-	position:absolute;
-	top:40%;
-	right:20px;
-	opacity:0;
-	transition: all .5s ease-in-out 0s;
-	}
-.left_hold:hover .left {
-	opacity:0.6;
-	}
-.right_hold:hover .right {
-	opacity:0.6;
+   height:50px;
+   width:50px;
+   position:absolute;
+   top:40%;
+   left:0px;
+   opacity:0;
+   transition: all .2s ease-in-out 0s;
 }
+
+.right {
+   height:50px;
+   width:50px;
+   position:absolute;
+   top:40%;
+   right:20px;
+   opacity:0;
+   transition: all .5s ease-in-out 0s;
+}
+
+.left_hold:hover .left {
+   opacity:0.6;
+}
+
+.right_hold:hover .right {
+   opacity:0.6;
+}
+
 /*.left:hover .left1    */
+
+/* End of slideshow stuff*/
+
+/* Small screen modifications */
+    
     
 @media (max-width: 500px) {
 
@@ -212,3 +212,4 @@ img#center {
     }
 }
 
+/*End of small screen modifications*/
